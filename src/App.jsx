@@ -19,6 +19,11 @@ function App() {
   const handleformSubmit = (e) => {
     e.preventDefault();
     let newExpenseAmmount = parseFloat(AmmountRef.current.value);
+    if(DetailRef.current.value === "" ||
+    CategoryRef.current.value === "" ||
+    AmmountRef.current.value === "" ||
+    DateRef.current.value === "" 
+    ) return;
     if (editingExpense !== null) {
       // Update existing expense
       const updatedExpense = {
