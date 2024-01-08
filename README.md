@@ -42,6 +42,7 @@ Visit http://localhost:3000 in your browser to start using the Expense Calculato
 
 Live Demo
 Explore the live version of the Expense Calculator App here.
+https://5-expense-calculator.vercel.app/
 
 Contributing
 If you'd like to contribute, please fork the repository and create a pull request. Feel free to open an issue if you encounter any bugs or have suggestions for improvements.
