@@ -55,11 +55,11 @@ function App() {
     clearFormFields();
   };
 
-  const handleDeleteExpense = (data) => {
+  const handleDeleteExpense = (index, data) => {
     let deleteExpense = parseFloat(data.Ammount);
     setTotalExpense((prev) => prev - deleteExpense);
     const updatedExpenses = ExpenseDetails.filter(
-      (item) => item.details !== data.details
+      (item, itemIndex) => itemIndex !== index
     );
     setExpenseDetails(updatedExpenses);
   };
@@ -135,7 +135,7 @@ function App() {
               </div>
               <div className="button col-2">
                 <RiEdit2Fill onClick={() => handleEditExpense(data)} />
-                <RiDeleteBin7Fill onClick={() => handleDeleteExpense(data)} />
+                <RiDeleteBin7Fill onClick={() => handleDeleteExpense(index, data)} />
               </div>
             </div>
           ))}
