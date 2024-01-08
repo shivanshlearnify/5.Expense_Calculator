@@ -1,0 +1,87 @@
+.home{
+    
+}
+.Home h1 {
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container {
+  width: 60vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  gap: 15px;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.247);
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+.left .LeftHead {
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+}
+.ExpenseDetails {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.right {
+  width: 40%;
+  height: 100%;
+  background-color: rgba(222, 184, 135, 0.247);
+  backdrop-filter: blur(3.5px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.right .TotalExpense{
+    font-size: 45px;
+    font-weight: 500;
+    margin: 10px auto 0 auto;
+}
+.right form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.right form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 15px 0 5px 0;
+}
+.right form input {
+  border: none;
+  height: 32px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.right form select {
+  border: none;
+  height: 32px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.right form input:focus {
+  outline: none;
+}
+.right form button {
+  width: 130px;
+  height: 32px;
+  margin: 10px 0;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
